@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  background: linear-gradient(
+    to right,
+    oklch(96.61% 0.053 199.75),
+    oklch(100% 0 0)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 500px;
+}
+
+.login-container {
+  width: 100%;
+  background-color: oklch(100% 0 0);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px oklch(95.08% 0.012 262.7);
+  box-sizing: border-box;
+}
+
+.title-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  color: oklch(20.47% 0.03 262.61);
+  margin: 0;
+}
+
+.input-container {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: oklch(54.53% 0.02 257.27);
+  letter-spacing: 0.5px;
+  transition: color 0.3s;
+}
+
+input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid oklch(65.7% 0.15 264.84);
+  border-radius: 10px;
+  font-size: 18px;
+  outline: none;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+  margin-top: 4px;
+}
+
+input:hover {
+  border: 2px solid oklch(74.88% 0.023 257.22);
+}
+
+input::placeholder {
+  opacity: 0.5;
+  color: oklch(74.88% 0.023 257.22);
+}
+
+input:hover::placeholder {
+  opacity: 1;
+  color: oklch(74.88% 0.023 257.22);
+}
+
+input:invalid {
+  border: 2px solid oklch(60.3% 0.233 29.5);
+}
+
+input:focus {
+  border-color: oklch(58.5% 0.2 264.84);
+}
+
+.error {
+  border: 2px solid oklch(60.3% 0.233 29.5);
+}
+
+.error:hover {
+  border: 2px solid oklch(60.3% 0.233 29.5);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: oklch(65.7% 0.15 264.84);
+  color: oklch(100% 0 0);
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+button:disabled {
+  background-color: oklch(4.25% 0.01 245.85 / 0.04);
+  cursor: not-allowed;
+}
+
+button:hover:enabled {
+  background-color: oklch(58.5% 0.2 264.84);
+}
+
+button:active:enabled {
+  background-color: oklch(55.6% 0.22 264.84);
+}
+
+button:focus-visible {
+  border-color: oklch(55.6% 0.22 264.84);
+}
+
+.loader {
+  border: 3px solid oklch(94.87% 0.007 264.76);
+  border-top: 3px solid oklch(55.74% 0.11 246.86);
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error-message {
+  color: oklch(60.3% 0.233 29.5);
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: oklch(48.55% 0.166 144.43);
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.links span {
+  font-size: 14px;
+}
+
+.links a {
+  color: oklch(65.7% 0.15 264.84);
+  text-decoration: none;
+  font-size: 14px;
+  margin: 0 5px;
+  transition: color 0.3s;
+}
+
+.links a:hover {
+  color: oklch(58.5% 0.2 264.84);
+}
